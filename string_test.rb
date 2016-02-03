@@ -201,18 +201,18 @@ class StringTest < Minitest::Homework
     assert_equal "mu", "music"[0...2]
   end
 
-  # def test_square_brackets_equal
-  #   s = "cut"
-  #   assert_equal "y", s
-  #   s[0] = "y"
-  #   assert_equal "p", s
-  #   s[-1] = "p"
-  #   assert_equal "k", s
-  #   s[-1] = "k"
-  #   assert_equal __, s
-  #   s[1] = "a"
-  #   assert_equal __, s
-  # end
+  def test_square_brackets_equal
+    s = "cut"
+    assert_equal "cut", s
+    s[0] = "y"
+    assert_equal "yut", s
+    s[-1] = "p"
+    assert_equal "yup", s
+    s[-1] = "k"
+    assert_equal "yuk", s
+    s[1] = "a"
+    # assert_equal __, s
+  end
 
   def test_interpolation
     s = "world"
